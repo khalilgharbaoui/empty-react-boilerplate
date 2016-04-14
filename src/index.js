@@ -8,7 +8,8 @@ ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
     <IndexRoute component={Hello} />
+    <Route path="*" component={NotFound} status={404} />
     </Route>
   </Router>
-  
+
 ), document.getElementById('root'));
